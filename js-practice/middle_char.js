@@ -1,12 +1,10 @@
-function solution(s) {
-    var str_length = s.length;
-    var answer;
+function solution(inputStr) {
+    const length = inputStr.length;
+    const quotient = str_length / 2;
+    const remainder = str_length % 2;
+    let answer = "";
     
-    if(str_length % 2 === 0){
-        answer = s.substr((str_length / 2)-1, 2);
-    }else{
-        answer = s.substr(str_length / 2, 1);
-    }
-    
+    answer = remainder === 0 ? inputStr.slice(quotient, quotient+1) : inputStr.slice(quotient, quotient+2);
+
     return answer;
 }
