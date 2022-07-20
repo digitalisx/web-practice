@@ -11,15 +11,13 @@ document.querySelector("#read-button").addEventListener('click', function(){
 
     // event handler
     reader.onload = function(e){
-        let buffer = e.target.result;
+        const buffer = e.target.result;
         const contentDec = new Uint8Array(buffer);
-        let contentHex = [];
+        const contentHex = [];
 
         // 16진수로 변환
-        let index = 0;
-        while(index < contentDec.length){
-            contentHex.push(contentDec[index].toString(16).toUpperCase());
-            index += 1;
+        for (let dec of contentDec){
+            contentHex.push(dec.toString(16).toUpperCase());
         }
 
         // MBR Signature 검증
@@ -79,9 +77,9 @@ function partitionAnalyze(content, partNumber){
     
     startingChs.value = "0x" + partition.slice(1,4).reverse().join('');
 
-    if(partition.slice(4,5) == ["0"].toString()){
+    if(partition.slice(4,5) == ["00"].toString()){
         partType.value = "Empty";
-    }else if(partition.slice(4,5) == ["7"].toString()){
+    }else if(partition.slice(4,5) == ["07"].toString()){
         partType.value = "FAT or NTFS";
     }else{
         partType.value = "else";
