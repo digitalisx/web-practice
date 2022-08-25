@@ -1,12 +1,8 @@
 <template>
   <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/introduction">Introduction</router-link> |
-    <router-link to="/researches">Researches</router-link> |
-    <router-link to="/projects">Projects</router-link> |
-    <router-link to="/news">News</router-link> |
-    <router-link to="/class">Class</router-link> |
-    <router-link to="/contact">Contact</router-link>
+    <router-link to="/">아주대학교</router-link> |
+    <router-link to="/department">대학</router-link> |
+    <router-link to="/news">뉴스</router-link>
   </nav>
   <router-view/>
 </template>
