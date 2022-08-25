@@ -66,6 +66,11 @@ const routes = [
     component: () => import(/* webpackChunkName: "department" */ '../views/PharmacyView.vue')
   },
   {
+    path: '/cat',
+    name: 'cat',
+    component: () => import(/* webpackChunkName: "cat" */ '../views/CatView.vue')
+  },
+  {
     path: '/news',
     name: 'news',
     component: () => import(/* webpackChunkName: "News" */ '../views/NewsView.vue')

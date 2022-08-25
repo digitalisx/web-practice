@@ -2,6 +2,7 @@
   <nav>
     <router-link to="/">아주대학교</router-link> |
     <router-link to="/department">대학</router-link> |
+    <router-link to="/cat">고양이</router-link> |
     <router-link to="/news">뉴스</router-link>
   </nav>
   <router-view/>
@@ -26,6 +27,6 @@ nav a {
 }
 
 nav a.router-link-exact-active {
-  color: #42b983;
+  color: rgb(53, 127, 236);
 }
 </style>
