@@ -1,5 +1,5 @@
 <template>
-  <img alt="Vue logo" src="@/assets/logo.png">
+  <img alt="Ajou logo" src="@/assets/logo.png">
   <nav>
     <router-link to="/">아주대학교</router-link> |
     <router-link to="/department">대학</router-link> |

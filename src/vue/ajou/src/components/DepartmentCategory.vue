@@ -19,7 +19,6 @@ export default {
   components: {},
   data() {
     return {
-      sampleData: ''
     }
   },
   setup() {},
