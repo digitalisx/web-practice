@@ -2,7 +2,7 @@
   <img alt="Ajou logo" src="@/assets/logo.png">
   <nav>
     <router-link to="/">아주대학교</router-link> |
-    <router-link to="/department">대학</router-link> |
+    <router-link to="/college">대학</router-link> |
     <router-link to="/cat">고양이</router-link> |
     <router-link to="/news">뉴스</router-link>
   </nav>

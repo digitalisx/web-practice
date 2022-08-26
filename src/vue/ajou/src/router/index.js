@@ -8,62 +8,62 @@ const routes = [
     component: HomeView
   },
   {
-    path: '/department',
-    name: 'department',
+    path: '/college',
+    name: 'college',
     // route level code-splitting
     // this generates a separate chunk (introduction.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "department" */ '../views/DepartmentView.vue')
+    component: () => import(/* webpackChunkName: "college" */ '../views/CollegeView.vue')
   },
   {
-    path: '/department/engineering',
+    path: '/college/engineering',
     name: 'engineering',
-    component: () => import(/* webpackChunkName: "department" */ '../views/EngineeringView.vue')
+    component: () => import(/* webpackChunkName: "college" */ '../views/colleges/EngineeringView.vue')
   },
   {
-    path: '/department/informationCommunication',
+    path: '/college/informationCommunication',
     name: 'informationCommunication',
-    component: () => import(/* webpackChunkName: "department" */ '../views/InformationCommunicationView.vue')
+    component: () => import(/* webpackChunkName: "college" */ '../views/colleges/InformationCommunicationView.vue')
   },
   {
-    path: '/department/naturalScience',
+    path: '/college/naturalScience',
     name: 'naturalScience',
-    component: () => import(/* webpackChunkName: "department" */ '../views/NaturalScienceView.vue')
+    component: () => import(/* webpackChunkName: "college" */ '../views/colleges/NaturalScienceView.vue')
   },
   {
-    path: '/department/business',
+    path: '/college/business',
     name: 'business',
-    component: () => import(/* webpackChunkName: "department" */ '../views/BusinessView.vue')
+    component: () => import(/* webpackChunkName: "college" */ '../views/colleges/BusinessView.vue')
   },
   {
-    path: '/department/humanities',
+    path: '/college/humanities',
     name: 'humanities',
-    component: () => import(/* webpackChunkName: "department" */ '../views/HumanitiesView.vue')
+    component: () => import(/* webpackChunkName: "college" */ '../views/colleges/HumanitiesView.vue')
   },
   {
-    path: '/department/socialScience',
+    path: '/college/socialScience',
     name: 'socialScience',
-    component: () => import(/* webpackChunkName: "department" */ '../views/SocialScienceView.vue')
+    component: () => import(/* webpackChunkName: "college" */ '../views/colleges/SocialScienceView.vue')
   },
   {
-    path: '/department/softwareFusion',
+    path: '/college/softwareFusion',
     name: 'softwareFusion',
-    component: () => import(/* webpackChunkName: "department" */ '../views/SoftwareFusionView.vue')
+    component: () => import(/* webpackChunkName: "college" */ '../views/colleges/SoftwareFusionView.vue')
   },
   {
-    path: '/department/medicine',
+    path: '/college/medicine',
     name: 'medicine',
-    component: () => import(/* webpackChunkName: "department" */ '../views/MedicineView.vue')
+    component: () => import(/* webpackChunkName: "college" */ '../views/colleges/MedicineView.vue')
   },
   {
-    path: '/department/nursing',
+    path: '/college/nursing',
     name: 'nursing',
-    component: () => import(/* webpackChunkName: "department" */ '../views/NursingView.vue')
+    component: () => import(/* webpackChunkName: "college" */ '../views/colleges/NursingView.vue')
   },
   {
-    path: '/department/pharmacy',
+    path: '/college/pharmacy',
     name: 'pharmacy',
-    component: () => import(/* webpackChunkName: "department" */ '../views/PharmacyView.vue')
+    component: () => import(/* webpackChunkName: "college" */ '../views/colleges/PharmacyView.vue')
   },
   {
     path: '/cat',

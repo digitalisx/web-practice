@@ -1,16 +1,15 @@
 <template>
   <div>
-    <Department/>
+    <Colleage/>
   </div>
 </template>
 
 <script>
-import Department from '@/components/DepartmentCategory.vue'
+import Colleage from '@/components/CollegeCategory.vue'
 
 export default {
-  name: 'DepartmentView',
   components: {
-    Department
+    Colleage
   },
   data() {
     return {
