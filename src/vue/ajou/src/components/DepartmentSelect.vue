@@ -34,7 +34,7 @@ export default {
       }
     },
     isDepartment(element) {
-      if (element.name === this.selectedDepartment) {
+      if (element.department === this.selectedDepartment) {
         return true
       }
     },
