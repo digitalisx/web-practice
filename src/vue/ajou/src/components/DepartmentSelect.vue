@@ -1,25 +1,25 @@
 <template>
   <div>
     <select @change="changeDescription" v-model="selectedDepartment">
-      <option value="">학과 선택</option>
+      <option value=null>학과 선택</option>
       <option :key="major.department" v-for="major in majorList.filter(isCollege)">{{ major.department }}</option>
     </select>
     <p>
-      <img v-if="selectedDepartment !== ''" :src="require(`@/assets/chitoh/${selectedDepartment}.jpg`)">
+      <img v-if="selectedDepartment !== null" :src="require(`@/assets/chitoh/${selectedDepartment}.jpg`)">
     </p>
-    <p v-if="description !== ''">{{ description }}</p>
+    <p v-if="description !== null">{{ description }}</p>
   </div>
 </template>
 <script>
-import data from '@/assets/colleges.js'
+import Collegedata from '@/assets/colleges.js'
 
 export default {
   components: {},
   data() {
     return {
-      selectedDepartment: '',
-      description: '',
-      majorList: data,
+      selectedDepartment: null,
+      description: null,
+      majorList: Collegedata,
       url: window.location.href
     }
   },
