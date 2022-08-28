@@ -29,7 +29,7 @@ export default {
   unmounted() {},
   methods: {
     isCollege(element) {
-      if (element.college === this.url.slice(this.url.indexOf('college') + 8)) {
+      if (element.college === this.url.slice(this.url.indexOf('college') + 'college/'.length)) {
         return true
       }
     },
