@@ -1,17 +1,17 @@
 <template>
+  <img alt="Ajou logo" src="@/assets/logo.png">
   <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/introduction">Introduction</router-link> |
-    <router-link to="/researches">Researches</router-link> |
-    <router-link to="/projects">Projects</router-link> |
-    <router-link to="/news">News</router-link> |
-    <router-link to="/class">Class</router-link> |
-    <router-link to="/contact">Contact</router-link>
+    <router-link to="/">아주대학교</router-link> |
+    <router-link to="/college">대학</router-link> |
+    <router-link to="/cat">고양이</router-link> |
+    <router-link to="/news">뉴스</router-link>
   </nav>
   <router-view/>
 </template>
 
 <style>
+@import "@/components/main.css";
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -30,6 +30,6 @@ nav a {
 }
 
 nav a.router-link-exact-active {
-  color: #42b983;
+  color: rgb(53, 127, 236);
 }
 </style>

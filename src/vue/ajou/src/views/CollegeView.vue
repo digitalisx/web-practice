@@ -1,12 +1,16 @@
 <template>
   <div>
-    <h1>This is researches page</h1>
-    <h3>publications | conference</h3>
+    <Colleage/>
   </div>
 </template>
+
 <script>
+import Colleage from '@/components/CollegeCategory.vue'
+
 export default {
-  components: {},
+  components: {
+    Colleage
+  },
   data() {
     return {
       sampleData: ''
