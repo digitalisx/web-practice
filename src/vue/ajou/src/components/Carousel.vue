@@ -1,18 +1,15 @@
 <template>
-  <div>
-    <College/>
+  <div  class="carousel">
+    <slot></slot>
   </div>
 </template>
-
 <script>
-import College from '@/components/CollegeCategory.vue'
-
 export default {
-  components: {
-    College
-  },
+  components: {},
   data() {
-    return { }
+    return {
+      sampleData: ''
+    }
   },
   setup() {},
   created() {},
