@@ -1,10 +1,10 @@
 <template>
   <div class="home">
     <carousel :items-to-show="1">
-      <slide v-for="index in 3" :key="index">
-        <img :src="require(`@/assets/univ${index}.jpg`)">
+      <slide v-for="(asset, index) in mainAssetsArray" :key="index">
+        <img :src="require(`@/assets/home/${asset.src}`)">
       </slide>
-
+      
       <template #addons>
         <pagination />
       </template>
@@ -22,12 +22,23 @@ export default {
     Pagination
   },
   data() {
-    return {}
+    return {
+      mainAssetsArray 
+    }
   },
   setup() {},
   created() {},
   mounted() {},
   unmounted() {},
-  methods: {}
+  methods: {
+  }
 }
+
+const images = require.context('../assets/home/', false, /\.jpg$/);
+const imagesArray = Array.from(images.keys());
+
+const mainAssetsArray = imagesArray.map(fileName => {
+  return { 'src': fileName.replace(/^.*[\\\/]/, '') }
+})
+
 </script>
