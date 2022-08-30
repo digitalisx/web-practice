@@ -1,15 +1,15 @@
 <template>
   <div class="home">
     <carousel>
-      <carousel-slide v-for="(slide,index) in slides" :key="slide" :index="index">
-        <img :src="slide"/>
+      <carousel-slide v-for="slide in slides" :key="slide">
+        <img :src="require(slide)"/>
       </carousel-slide>
     </carousel>
   </div>
 </template>
 <script>
-import Carousel from '@/components/Carousel.vue'
-import CarouselSlide from '@/components/CarouselSlide.vue'
+import Carousel from "@/components/Carousel.vue"
+import CarouselSlide from "@/components/CarouselSlide.vue"
 
 export default {
   components: {
