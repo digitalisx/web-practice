@@ -1,30 +1,28 @@
 <template>
   <div class="home">
-    <carousel>
-      <carousel-slide v-for="slide in slides" :key="slide">
-        <img :src="require(slide)"/>
-      </carousel-slide>
+    <carousel :items-to-show="1">
+      <slide v-for="index in 3" :key="index">
+        <img :src="require(`@/assets/univ${index}.jpg`)">
+      </slide>
+
+      <template #addons>
+        <pagination />
+      </template>
     </carousel>
   </div>
 </template>
 <script>
-import Carousel from "@/components/Carousel.vue"
-import CarouselSlide from "@/components/CarouselSlide.vue"
+import "vue3-carousel/dist/carousel.css";
+import { Carousel, Slide, Pagination } from 'vue3-carousel';
 
 export default {
   components: {
     Carousel,
-    CarouselSlide
+    Slide,
+    Pagination
   },
   data() {
-    return {
-      slides: [
-        '@/assets/univ1.jpg',
-        '@/assets/univ2.jpg',
-        '@/assets/univ3.jpg'
-      ],
-      visibleSlide: 0
-    }
+    return {}
   },
   setup() {},
   created() {},
