@@ -1,20 +1,18 @@
 <template>
   <div>
-    <Colleage/>
+    <College/>
   </div>
 </template>
 
 <script>
-import Colleage from '@/components/CollegeCategory.vue'
+import College from '@/components/CollegeCategory.vue'
 
 export default {
   components: {
-    Colleage
+    College
   },
   data() {
-    return {
-      sampleData: ''
-    }
+    return { }
   },
   setup() {},
   created() {},
