@@ -2,9 +2,9 @@
   <div class="home">
     <carousel :items-to-show="1">
       <slide v-for="(asset, index) in mainAssetsArray" :key="index">
-        <img :src="require(`@/assets/home/${asset.src}`)">
+        <img class="main-image" :src="require(`@/assets/home/${asset.src}`)">
       </slide>
-      
+
       <template #addons>
         <pagination />
       </template>
@@ -23,7 +23,8 @@ export default {
   },
   data() {
     return {
-      mainAssetsArray 
+      mainAssetsArray
+
     }
   },
   setup() {},
