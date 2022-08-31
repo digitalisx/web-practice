@@ -4,7 +4,7 @@
       <slide v-for="(asset, index) in mainAssetsArray" :key="index">
         <img class="main-image" :src="require(`@/assets/home/${asset.src}`)">
       </slide>
-
+      
       <template #addons>
         <pagination />
       </template>
@@ -24,7 +24,6 @@ export default {
   data() {
     return {
       mainAssetsArray
-
     }
   },
   setup() {},
