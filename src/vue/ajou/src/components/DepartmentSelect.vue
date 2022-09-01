@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <select @change="changeDescription" v-model="selectedDepartment">
+  <div margin-top="10px;">
+    <select @change="changeDescription" v-model="selectedDepartment" style="width:200px;height:30px;">
       <option value=null>학과 선택</option>
       <option :key="major.department" v-for="major in majorList.filter(isCollege)">{{ major.department }}</option>
     </select>
@@ -44,3 +44,10 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+  div { margin-top: 20px; }
+  option {
+    font-weight: bold;
+  }
+</style>
