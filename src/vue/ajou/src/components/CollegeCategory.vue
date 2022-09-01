@@ -27,3 +27,9 @@ export default {
   methods: {}
 }
 </script>
+
+<style scoped>
+  nav {
+    font-size: 130%
+  }
+</style>

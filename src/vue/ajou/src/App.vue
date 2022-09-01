@@ -23,7 +23,7 @@
 
 nav {
   padding: 20px;
-  font-size: x-large;
+  font-size: 200%;
 }
 
 nav a {
